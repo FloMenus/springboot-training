@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Jun 06 22:29:55 CEST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-018f-ef3e-6716-000002e35a00 
+on database directory memory:/home/flomenus/java/training-app/training/cdee302f-42c7-45ce-902b-2408b2cdd0c3 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@7aec35a 
+Loaded from file:/root/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=17.0.11+9
+user.dir=/home/flomenus/java/training-app/training
+os.name=Linux
+os.arch=amd64
+os.version=5.15.146.1-microsoft-standard-WSL2
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

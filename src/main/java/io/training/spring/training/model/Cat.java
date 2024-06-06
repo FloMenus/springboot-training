@@ -1,5 +1,11 @@
 package io.training.spring.training.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+// // import jakarta.persistence.GenerationType;
+// // import jakarta.persistence.GeneratedValue;
+
+@Entity
 public class Cat {
     public enum FurLength {
         SHORT,
@@ -17,6 +23,8 @@ public class Cat {
         FEMALE
     }
 
+    @Id
+    private long id;
     private String name;
     private int age;
     private String description;
@@ -25,7 +33,11 @@ public class Cat {
     private FurColor furColor;
     private Gender gender;
 
-    public Cat(String name, int age, String description, String favoriteDinner, FurLength furLength, FurColor furColor, Gender gender) {
+    public Cat() {}
+  
+    public Cat(long id, String name, int age, String description, String favoriteDinner, FurLength furLength, FurColor furColor, Gender gender) {
+        super();
+        this.id = id;
         this.name = name;
         this.age = age;
         this.description = description;
@@ -35,8 +47,16 @@ public class Cat {
         this.gender = gender;
     }
 
+
 	
-    // Getters and setters
+    // Getters and setters*
+    public long getId() {
+        return this.id;
+    }
+    public void setId(long id) {
+        this.id = id;
+    }
+
 	public String getName() {
 		return this.name;
 	}
